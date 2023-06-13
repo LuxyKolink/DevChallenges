@@ -1,0 +1,61 @@
+:root {
+    --font-gray: #505868;
+    --font-black: #2f2f2f;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: 100;
+    color: var(--font-gray)
+  }
+
+h1 {
+    color: var(--font-black);
+}
+
+.flex-container {
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 550px;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+}
+
+.flex-item-left img {
+    width: 80%;
+    height: 100%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right button {
+    background-color: var(--font-black);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
